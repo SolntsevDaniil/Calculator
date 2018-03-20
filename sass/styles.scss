@@ -1,0 +1,86 @@
+/* ---------- Basic needs ---------- */
+
+@import 'fonts';
+@import 'reset';
+
+* { box-sizing: border-box; }
+
+/* ---------- Print field ---------- */
+
+.total {
+
+	/* Outer geometrics ----- */
+	display: block;
+	height: 50px;
+	width: 100%;
+
+	/* Border and outline ----- */
+	outline: 0;
+	border: 0;
+	border-bottom: 1px solid #999;
+
+	/* Adding font and font-size ----- */
+	&_text {
+		padding-left: 20px;
+		font-family: "PTSansRegular", Arial, sans-serif;	
+	}	
+}
+
+/* ---------- Numbers ---------- */
+
+.input {
+	
+	/* Adding flexbox with prefixes to the group ----- */
+	&s {
+		display: flex;
+		display: -webkit-box; 
+		display: -moz-box;
+		display: -ms-flexbox;
+		display: -webkit-flex; 
+	}
+
+	/* Adding flexbox width with prefixes and height in vh measures ----- */
+	flex: 1;
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;       
+	-ms-flex: 1; 
+	height: 20vh;
+
+	cursor: pointer;
+
+	/* Border and outline ----- */
+	outline: 0;
+	border: 1px solid #ccc;
+
+	/* Adding font, font-size and font-weight ----- */
+	&_text {
+		font-size: 20px;
+		font-family: "PTSansBold", Arial, sans-serif;
+		font-weight: bold;	
+	}
+
+	/* Number's color ----- */
+	&_color {
+		color: #212121;
+		background-color: #fff;
+		transition: .3s all;
+	}
+
+	/* Button '=' color ----- */
+	&_bgc-color-orange {
+		color: #FAFAFA;
+		background-color: #ff6e00;
+	}
+
+	/* Operation buttons color ----- */
+	&_operations {
+		color: #ff6e00;
+		background-color: #ededed;
+	}
+
+	/* Height of the buttons 'C' and 'DEL' ----- */
+	&_delete { height: 10vh; }
+
+	/* If button is pressed ----- */
+	&:active { background-color: #ededed; }
+}

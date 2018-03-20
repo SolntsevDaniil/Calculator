@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+
+	<!-- Basic page needs
+	______________________________________-->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<title>Calculator</title>
+
+
+	<!-- Meta
+	______________________________________-->	
+	<meta name="description" content="I think that calculator does not need any description. It is just calculator.">
+	<meta name="author" content="Solntsev Daniil - https://github.com/SolntsevDaniil">
+
+		<!-- Open Graph
+		______________________________________-->	
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://solntsevdaniil.github.io/index.html">
+		<meta property="og:title" content="Calculator">
+		<meta property="og:image" content="css/img/512x512.png">
+		<meta property="og:description" content="I think that calculator does not need any description. It is just calculator.">
+		<meta property="og:site_name" content="solntsevdaniil.github.io">
+		<meta property="og:locale" content="en_US">
+		<meta property="og:image:width" content="512">
+		<meta property="og:image:height" content="512">
+
+	<!-- Icons
+	______________________________________-->	
+	
+		<!-- Manifest.json
+		______________________________________-->
+		<link rel="manifest" href="js/manifest.json">
+
+		<!-- Common icons
+		______________________________________-->
+		<link rel="icon" type="image/png" href="css/img/favicon.ico" sizes="16x16">
+		<link rel="icon" type="image/png" href="css/img/32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="css/img/64x64.png" sizes="64x64">
+
+		<!-- Apple Touch Icon
+		______________________________________-->
+		<link rel="apple-touch-icon" href="css/img/16x16" sizes="16x16">
+		<link rel="apple-touch-icon" href="css/img/32x32" sizes="32x32">
+		<link rel="apple-touch-icon" href="css/img/64x64" sizes="64x64">
+		<link rel="apple-touch-icon" href="css/img/128x128" sizes="128x128">
+		<link rel="apple-touch-icon" href="css/img/256x256" sizes="256x256">
+		<link rel="apple-touch-icon" href="css/img/512x512" sizes="512x512">
+
+		<!-- SVG
+		______________________________________-->
+		<link rel="mask-icon" href="safari.svg" color="#000">
+
+		<!-- Apple Web App Meta
+		______________________________________-->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!-- Microsoft Tiles
+		______________________________________-->
+		<meta name="msapplication-config" content="js/browserconfig.xml">
+
+
+	<!-- CSS
+	______________________________________-->
+	<link rel="stylesheet" href="css/styles.css">
+
+
+	<!-- JS
+	______________________________________-->
+	<script src="js/script.js"></script>
+
+
+</head>
+<body>
+<div class="wrapper">
+	<input type="text" class="total total_text" readonly>
+
+	<div class="inputs">
+		<button class="input input_color input_text input_delete" value="c">C</button>
+		<button class="input input_color input_text input_delete" value="del">DEL</button>
+	</div>
+
+	<div class="inputs">
+		<button class="input input_color input_text" value="7">7</button>
+		<button class="input input_color input_text" value="8">8</button>
+		<button class="input input_color input_text" value="9">9</button>
+		<button class="input input_color input_text input_operations" value="/">/</button>
+	</div>
+
+	<div class="inputs">
+		<button class="input input_color input_text" value="4">4</button>
+		<button class="input input_color input_text" value="5">5</button>
+		<button class="input input_color input_text" value="6">6</button>
+		<button class="input input_color input_text input_operations" value="*">*</button>
+	</div>
+
+	<div class="inputs">
+		<button class="input input_color input_text" value="1">1</button>
+		<button class="input input_color input_text" value="2">2</button>
+		<button class="input input_color input_text" value="3">3</button>
+		<button class="input input_color input_text input_operations" value="-">-</button>
+	</div>
+
+	<div class="inputs">
+		<button class="input input_color input_text" value="0">0</button>
+		<button class="input input_color input_text" value=".">.</button>
+		<button class="input input_color input_text input_bgc-color-orange" value="=">=</button>
+		<button class="input input_color input_text input_operations" value="+">+</button>
+	</div>
+
+</div>
+</body>
+</html>
