@@ -1,10 +1,4 @@
-/* ---------- Start of the program ---------- */
-
-
-// Declaration of the strict mode
 'use strict';
-
-// Page load ending event
 window.addEventListener('DOMContentLoaded', function() {
 
 	// Object with properties and method
@@ -55,6 +49,3 @@ window.addEventListener('DOMContentLoaded', function() {
 	// If user data in localStorage, get it
 	inputs.total.value = localStorage.getItem('Result');
 });
-
-
-/* ---------- End of the program ---------- */
